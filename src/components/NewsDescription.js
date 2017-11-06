@@ -1,9 +1,5 @@
 import React from "react";
 
-const titleStyle = {
-  fontWeight: "bold"
-};
-
 function NewsDescription({
   title,
   description,
@@ -13,14 +9,12 @@ function NewsDescription({
 }) {
   return (
     <div>
-      <p className="title" style={titleStyle}>
-        {title}
-      </p>
-      <p>
+      <p className="title">{title}</p>
+      <p className="stats">
         Stats: Fake News Votes {fakeVotes} | Real Votes {realVotes}
       </p>
-      <p>By {provider}</p>
-      <p>{description}</p>
+      <p className="provider">By {provider}</p>
+      <p className="description">{description}</p>
     </div>
   );
 }

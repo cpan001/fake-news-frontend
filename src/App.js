@@ -6,8 +6,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
 const Home = () => (
-  <div>
+  <div className="home-container">
+    <div className="home-empty-container" />
     <NewsContainer />
+    <div className="home-empty-container" />
   </div>
 );
 const About = () => <div>Ran out of time...</div>;

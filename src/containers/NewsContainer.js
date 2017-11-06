@@ -100,7 +100,7 @@ export default class NewsContainer extends React.Component {
         : null;
     console.log("hit newscontainer", articles);
     return (
-      <div>
+      <div className="home-news-container">
         <h1>Fake News Site</h1>
         {articles}
       </div>

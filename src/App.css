@@ -1,28 +1,112 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f9f9f9;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.home-container {
+  display: flex;
+  flex-direction: row;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.home-empty-container {
+  flex: 0.35;
 }
 
-.App-title {
-  font-size: 1.5em;
+.home-news-container {
+  flex: 1;
 }
 
-.App-intro {
-  font-size: large;
+.card-container {
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.photo-container {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.description-container {
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.buttons-container {
+  flex: 0.5;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.news-image {
+  margin: 20px 0;
+}
+
+input[type="button"][value="Nah, it's real"] {
+  margin: 10px 0;
+  -moz-box-shadow: inset 0px 1px 0px 0px #45d6d6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45d6d6;
+  box-shadow: inset 0px 1px 0px 0px #45d6d6;
+  background-color: #2cbbbb;
+  border: 1px solid #27a0a0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+input[type="button"][value="Nah, it's real"]:hover {
+  background: linear-gradient(to bottom, #34caca 5%, #30c9c9 100%);
+  background-color: #34caca;
+}
+input[type="button"][value="FAKE NEWS!"] {
+  width: 100%;
+  -moz-box-shadow: inset 0px 1px 0px 0px #45d6d6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45d6d6;
+  box-shadow: inset 0px 1px 0px 0px #820d0b;
+  background-color: #bc201e;
+  border: 1px solid #820d0b;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+input[type="button"][value="FAKE NEWS!"]:hover {
+  background: linear-gradient(to bottom, #e2322f 5%, #e2322f 100%);
+  background-color: #e2322f;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stats {
+  font-size: 15px;
+}
+
+.provider {
+  font-size: 15px;
+  color: #858587;
+}
+
+.description {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.main-comments {
+  font-size: 15px;
+  color: #b3b3b5;
+  font-weight: bold;
 }
