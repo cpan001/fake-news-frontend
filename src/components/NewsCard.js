@@ -1,10 +1,10 @@
 import React from "react";
 import NewsPhoto from "./NewsPhoto";
-import NewsComments from "./NewsComments";
+import NewsCommentsContainer from "./NewsCommentsContainer";
 import NewsButtons from "./NewsButtons";
 import NewsDescription from "./NewsDescription";
 
-function NewsCard({ article, onButtonClick }) {
+function NewsCard({ article, onButtonClick, onCommentClick }) {
   console.log("hit newscard", article);
   return (
     <div className="card">
@@ -20,10 +20,10 @@ function NewsCard({ article, onButtonClick }) {
             fakeVotes={article.fake}
             realVotes={article.real}
           />
-          <NewsComments />
+          <NewsCommentsContainer comments={article.comments} id={article.id} />
         </div>
         <div className="buttons-container">
-          <NewsButtons onButtonClick={onButtonClick} title={article.title} />
+          <NewsButtons onButtonClick={onButtonClick} id={article.id} />
         </div>
       </div>
     </div>
@@ -31,5 +31,3 @@ function NewsCard({ article, onButtonClick }) {
 }
 
 export default NewsCard;
-
-//change title to ID for buttons

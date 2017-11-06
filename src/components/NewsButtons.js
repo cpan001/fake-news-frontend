@@ -1,19 +1,11 @@
 import React from "react";
 import NewsButton from "./NewsButton";
 
-function NewsButtons({ onButtonClick, title }) {
+function NewsButtons({ onButtonClick, id }) {
   return (
     <div>
-      <NewsButton
-        text="FAKE NEWS!"
-        onButtonClick={onButtonClick}
-        title={title}
-      />
-      <NewsButton
-        text="Nah, it's real"
-        onButtonClick={onButtonClick}
-        title={title}
-      />
+      <NewsButton text="FAKE NEWS!" onButtonClick={onButtonClick} id={id} />
+      <NewsButton text="Nah, it's real" onButtonClick={onButtonClick} id={id} />
     </div>
   );
 }
